@@ -16,58 +16,55 @@ namespace GUI
 	public
 	ref class UserInputForm : public System::Windows::Forms::Form
 	{
-	private:
+		private:
 		std::vector<std::pair<std::pair<int, int>, OBJECT_TYPE>>& objects;
 
-	private:
+		private:
 		int& coolorMapWidth;
 
-	private:
+		private:
 		System::Windows::Forms::Button^ run;
 
-	private:
+		private:
 		int& colorMapHeight;
 
-	private:
+		private:
 		unsigned int building4FloorsCount;
 
-	private:
+		private:
 		OBJECT_TYPE selectedObject;
 
-	private:
+		private:
 		GROUND_TYPE groundType;
 
-	private:
+		private:
 		System::Windows::Forms::Label^ label1;
 
-	private:
+		private:
 		System::Windows::Forms::ListBox^ environmentTimeList;
 
-	private:
+		private:
 		System::Windows::Forms::Button^ clearAll;
 
-	private:
-
-
-	private:
+		private:
 		System::Windows::Forms::ListBox^ groundTexureList;
 
-	private:
+		private:
 		System::Windows::Forms::Label^ label2;
 
-	private:
+		private:
 		System::Windows::Forms::Button^ blend;
 
-	private:
+		private:
 		System::Windows::Forms::RichTextBox^ building4FloorInput;
 
-	private:
+		private:
 		System::Windows::Forms::Label^ label4;
 
-	private:
+		private:
 		ENVIRONMENT_TIME environmentTime;
 
-	public:
+		public:
 		UserInputForm(
 			std::vector<std::pair<std::pair<int, int>, OBJECT_TYPE>>& objects,
 			int& coolorMapWidth, int& colorMapHeight)
@@ -84,7 +81,7 @@ namespace GUI
 			this->selectedObject = NOTHING;
 		}
 
-	protected:
+		protected:
 		~UserInputForm()
 		{
 			if (components)
@@ -93,40 +90,40 @@ namespace GUI
 			}
 		}
 
-	private:
+		private:
 		System::Windows::Forms::PictureBox^ colorMap;
 
-	private:
+		private:
 		System::Windows::Forms::Button^ streetHorizontal;
 
-	private:
+		private:
 		System::Windows::Forms::Button^ tree;
 
-	private:
+		private:
 		System::Windows::Forms::Button^ building1;
 
-	private:
+		private:
 		System::Windows::Forms::Button^ building2;
 
-	private:
+		private:
 		System::Windows::Forms::Button^ building3;
 
-	private:
+		private:
 		System::Windows::Forms::Button^ building4;
 
-	private:
+		private:
 		System::Windows::Forms::Button^ car;
 
-	private:
+		private:
 		System::Windows::Forms::Button^ lamp;
 
-	private:
+		private:
 		System::Windows::Forms::Button^ streetVertical;
 
-	private:
+		private:
 		System::ComponentModel::Container^ components;
 
-#pragma region Windows Form Designer generated code
+		#pragma region Windows Form Designer generated code
 
 		void InitializeComponent(void)
 		{
@@ -168,8 +165,7 @@ namespace GUI
 			// 
 			this->streetHorizontal->AutoSize = true;
 			this->streetHorizontal->BackColor = System::Drawing::Color::DarkGray;
-			this->streetHorizontal->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-											static_cast<System::Byte>(0)));
+			this->streetHorizontal->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->streetHorizontal->Location = System::Drawing::Point(572, 13);
 			this->streetHorizontal->Name = L"streetHorizontal";
 			this->streetHorizontal->Size = System::Drawing::Size(107, 40);
@@ -182,8 +178,7 @@ namespace GUI
 			// 
 			this->tree->AutoSize = true;
 			this->tree->BackColor = System::Drawing::Color::Green;
-			this->tree->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-								static_cast<System::Byte>(0)));
+			this->tree->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->tree->Location = System::Drawing::Point(572, 105);
 			this->tree->Name = L"tree";
 			this->tree->Size = System::Drawing::Size(107, 40);
@@ -196,8 +191,7 @@ namespace GUI
 			// 
 			this->building1->AutoSize = true;
 			this->building1->BackColor = System::Drawing::Color::OrangeRed;
-			this->building1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-									 static_cast<System::Byte>(0)));
+			this->building1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->building1->Location = System::Drawing::Point(572, 151);
 			this->building1->Name = L"building1";
 			this->building1->Size = System::Drawing::Size(107, 40);
@@ -210,8 +204,7 @@ namespace GUI
 			// 
 			this->building2->AutoSize = true;
 			this->building2->BackColor = System::Drawing::Color::Sienna;
-			this->building2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-									 static_cast<System::Byte>(0)));
+			this->building2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->building2->Location = System::Drawing::Point(572, 197);
 			this->building2->Name = L"building2";
 			this->building2->Size = System::Drawing::Size(107, 40);
@@ -224,8 +217,7 @@ namespace GUI
 			// 
 			this->building3->AutoSize = true;
 			this->building3->BackColor = System::Drawing::Color::Chocolate;
-			this->building3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-									 static_cast<System::Byte>(0)));
+			this->building3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->building3->Location = System::Drawing::Point(572, 243);
 			this->building3->Name = L"building3";
 			this->building3->Size = System::Drawing::Size(107, 40);
@@ -238,8 +230,7 @@ namespace GUI
 			// 
 			this->building4->AutoSize = true;
 			this->building4->BackColor = System::Drawing::Color::Orange;
-			this->building4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-									 static_cast<System::Byte>(0)));
+			this->building4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->building4->Location = System::Drawing::Point(572, 289);
 			this->building4->Name = L"building4";
 			this->building4->Size = System::Drawing::Size(107, 40);
@@ -252,8 +243,7 @@ namespace GUI
 			// 
 			this->car->AutoSize = true;
 			this->car->BackColor = System::Drawing::Color::Aqua;
-			this->car->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-							   static_cast<System::Byte>(0)));
+			this->car->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->car->Location = System::Drawing::Point(572, 335);
 			this->car->Name = L"car";
 			this->car->Size = System::Drawing::Size(107, 40);
@@ -266,8 +256,7 @@ namespace GUI
 			// 
 			this->lamp->AutoSize = true;
 			this->lamp->BackColor = System::Drawing::Color::Gold;
-			this->lamp->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-								static_cast<System::Byte>(0)));
+			this->lamp->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->lamp->Location = System::Drawing::Point(572, 381);
 			this->lamp->Name = L"lamp";
 			this->lamp->Size = System::Drawing::Size(107, 40);
@@ -280,8 +269,7 @@ namespace GUI
 			// 
 			this->streetVertical->AutoSize = true;
 			this->streetVertical->BackColor = System::Drawing::Color::DarkGray;
-			this->streetVertical->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-										  static_cast<System::Byte>(0)));
+			this->streetVertical->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->streetVertical->Location = System::Drawing::Point(572, 59);
 			this->streetVertical->Name = L"streetVertical";
 			this->streetVertical->Size = System::Drawing::Size(107, 40);
@@ -292,8 +280,7 @@ namespace GUI
 			// 
 			// run
 			// 
-			this->run->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 30, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-							   static_cast<System::Byte>(0)));
+			this->run->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 30, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->run->Location = System::Drawing::Point(572, 576);
 			this->run->Name = L"run";
 			this->run->Size = System::Drawing::Size(232, 84);
@@ -305,8 +292,7 @@ namespace GUI
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-								  static_cast<System::Byte>(0)));
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->label1->Location = System::Drawing::Point(685, 13);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(162, 25);
@@ -315,8 +301,7 @@ namespace GUI
 			// 
 			// environmentTimeList
 			// 
-			this->environmentTimeList->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
-											   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->environmentTimeList->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->environmentTimeList->FormattingEnabled = true;
 			this->environmentTimeList->ItemHeight = 25;
 			this->environmentTimeList->Items->AddRange(gcnew cli::array< System::Object^  >(2)
@@ -333,8 +318,7 @@ namespace GUI
 			// 
 			this->clearAll->AutoSize = true;
 			this->clearAll->BackColor = System::Drawing::Color::Transparent;
-			this->clearAll->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-									static_cast<System::Byte>(0)));
+			this->clearAll->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->clearAll->Location = System::Drawing::Point(695, 427);
 			this->clearAll->Name = L"clearAll";
 			this->clearAll->Size = System::Drawing::Size(107, 40);
@@ -345,8 +329,7 @@ namespace GUI
 			// 
 			// groundTexureList
 			// 
-			this->groundTexureList->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-											static_cast<System::Byte>(0)));
+			this->groundTexureList->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->groundTexureList->FormattingEnabled = true;
 			this->groundTexureList->ItemHeight = 25;
 			this->groundTexureList->Items->AddRange(gcnew cli::array< System::Object^  >(4)
@@ -362,8 +345,7 @@ namespace GUI
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-								  static_cast<System::Byte>(0)));
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->label2->Location = System::Drawing::Point(690, 105);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(141, 25);
@@ -374,8 +356,7 @@ namespace GUI
 			// 
 			this->blend->AutoSize = true;
 			this->blend->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->blend->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-								 static_cast<System::Byte>(0)));
+			this->blend->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->blend->Location = System::Drawing::Point(572, 427);
 			this->blend->Name = L"blend";
 			this->blend->Size = System::Drawing::Size(107, 40);
@@ -386,8 +367,7 @@ namespace GUI
 			// 
 			// building4FloorInput
 			// 
-			this->building4FloorInput->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular,
-											   System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->building4FloorInput->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->building4FloorInput->Location = System::Drawing::Point(810, 295);
 			this->building4FloorInput->Name = L"building4FloorInput";
 			this->building4FloorInput->Size = System::Drawing::Size(85, 31);
@@ -398,8 +378,7 @@ namespace GUI
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-								  static_cast<System::Byte>(0)));
+			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->label4->Location = System::Drawing::Point(692, 295);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(112, 25);
@@ -430,8 +409,7 @@ namespace GUI
 			this->Controls->Add(this->tree);
 			this->Controls->Add(this->streetHorizontal);
 			this->Controls->Add(this->colorMap);
-			this->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-						  static_cast<System::Byte>(0)));
+			this->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->Name = L"UserInputForm";
 			this->Text = L"OpenGL DEMO";
@@ -441,12 +419,10 @@ namespace GUI
 
 		}
 
-#pragma endregion
+		#pragma endregion
 
-	private:
-		System::Void colorMapMouseClicked(System::Object^ sender,
-										  System::Windows::Forms::MouseEventArgs^
-										  e)
+		private:
+		System::Void colorMapMouseClicked(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e)
 		{
 			int x = e->X, y = e->Y;
 
@@ -567,75 +543,68 @@ namespace GUI
 			}
 		}
 
-	private:
-		System::Void streetHorizontalClicked(System::Object^ sender,
-											 System::EventArgs^ e)
+		private:
+		System::Void streetHorizontalClicked(System::Object^ sender, System::EventArgs^ e)
 		{
 			this->selectedObject = STREET_HORIZONTAL;
 		}
 
-	private:
-		System::Void streetVerticalClicked(System::Object^ sender,
-										   System::EventArgs^ e)
+		private:
+		System::Void streetVerticalClicked(System::Object^ sender, System::EventArgs^ e)
 		{
 			this->selectedObject = STREET_VERTICAL;
 		}
 
-	private:
+		private:
 		System::Void treeClicked(System::Object^ sender, System::EventArgs^ e)
 		{
 			this->selectedObject = TREE;
 		}
 
-	private:
-		System::Void building1Clicked(System::Object^ sender,
-									  System::EventArgs^ e)
+		private:
+		System::Void building1Clicked(System::Object^ sender, System::EventArgs^ e)
 		{
 			this->selectedObject = BUILDING1;
 		}
 
-	private:
-		System::Void building2Clicked(System::Object^ sender,
-									  System::EventArgs^ e)
+		private:
+		System::Void building2Clicked(System::Object^ sender, System::EventArgs^ e)
 		{
 			this->selectedObject = BUILDING2;
 		}
 
-	private:
-		System::Void building3Clicked(System::Object^ sender,
-									  System::EventArgs^ e)
+		private:
+		System::Void building3Clicked(System::Object^ sender, System::EventArgs^ e)
 		{
 			this->selectedObject = BUILDING3;
 		}
 
-	private:
-		System::Void building4Clicked(System::Object^ sender,
-									  System::EventArgs^ e)
+		private:
+		System::Void building4Clicked(System::Object^ sender, System::EventArgs^ e)
 		{
 			this->selectedObject = BUILDING4;
 		}
 
-	private:
+		private:
 		System::Void carClicked(System::Object^ sender, System::EventArgs^ e)
 		{
 			this->selectedObject = CAR;
 		}
 
-	private:
+		private:
 		System::Void lampClicked(System::Object^ sender, System::EventArgs^ e)
 		{
 			this->selectedObject = LAMP;
 		}
 
-	private:
+		private:
 		System::Void blendClicked(System::Object^ sender, System::EventArgs^ e)
 		{
 			this->selectedObject = BLENDING_OBJECT;
 		}
 
-	private:
-		System::Void colorMapPaint(System::Object^ sender,
-								   System::Windows::Forms::PaintEventArgs^ e)
+		private:
+		System::Void colorMapPaint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e)
 		{
 			Graphics^ g = e->Graphics;
 
@@ -655,7 +624,7 @@ namespace GUI
 			g->FillEllipse(brush_2, colorMap->Width / 2, colorMap->Height / 2, 10, 10);
 		}
 
-	private:
+		private:
 		System::Void runGLFW(System::Object^ sender, System::EventArgs^ e)
 		{
 			//============================================================
@@ -668,9 +637,8 @@ namespace GUI
 			//============================================================
 		}
 
-	private:
-		System::Void environmentTimeChanged(System::Object^ sender,
-											System::EventArgs^ e)
+		private:
+		System::Void environmentTimeChanged(System::Object^ sender, System::EventArgs^ e)
 		{
 			int selectedIndex = environmentTimeList->SelectedIndex;
 			switch (selectedIndex)
@@ -687,16 +655,15 @@ namespace GUI
 			}
 		}
 
-	private:
+		private:
 		System::Void clearAllClicked(System::Object^ sender, System::EventArgs^ e)
 		{
 			this->colorMap->Refresh();
 			this->objects.clear();
 		}
 
-	private:
-		System::Void groundTextureClicked(System::Object^ sender,
-										  System::EventArgs^ e)
+		private:
+		System::Void groundTextureClicked(System::Object^ sender, System::EventArgs^ e)
 		{
 			// L"Rocks" , L"Grass", L"Solid", L"Sand"
 			int selectedIndex = groundTexureList->SelectedIndex;
@@ -717,9 +684,8 @@ namespace GUI
 			}
 		}
 
-	private:
-		System::Void building4FloorInputChanged(System::Object^ sender,
-												System::EventArgs^ e)
+		private:
+		System::Void building4FloorInputChanged(System::Object^ sender, System::EventArgs^ e)
 		{
 			if (this->building4FloorInput->Text != "")
 				this->building4FloorsCount =

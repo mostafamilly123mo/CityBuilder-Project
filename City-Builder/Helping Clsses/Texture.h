@@ -3,12 +3,14 @@
 #include "ExternalLibraries.h"
 
 
-class Texture {
-public:
+class Texture
+{
+	public:
 	GLuint ID;
 
-	Texture(const char* imagePath) {
-		// Generate and bind the texture
+	Texture(const char* imagePath)
+	{
+// Generate and bind the texture
 		GLuint  tempID;
 		glGenTextures(1, &tempID);
 		glBindTexture(GL_TEXTURE_2D, tempID);
@@ -24,18 +26,21 @@ public:
 		stbi_set_flip_vertically_on_load(true); // tell stb_image.h to flip loaded texture's on the y-axis.
 		// The FileSystem::getPath(...) is part of the GitHub repository so we can find files on any IDE/platform; replace it with your own image path.
 		unsigned char* data = stbi_load(imagePath, &width, &height, &nrChannels, 0);
-		if (data) {
+		if (data)
+		{
 			glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
 			glGenerateMipmap(GL_TEXTURE_2D);
 		}
-		else {
+		else
+		{
 			std::cout << "Failed to load texture" << std::endl;
 		}
 		stbi_image_free(data);
 		this->ID = tempID;
 	}
 
-	void activate() {
+	void activate()
+	{
 		glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, ID);
 	}

@@ -4,7 +4,8 @@
 
 [System::STAThread]
 
-int main() {
+int main()
+{
 
 	std::vector<std::pair<std::pair<int, int>, OBJECT_TYPE>> objects;
 	int coolorMapWidth;

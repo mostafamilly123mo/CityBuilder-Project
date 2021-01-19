@@ -12,7 +12,8 @@
 
 
 // to determine the type of the object and perform the appropriate operations
-enum OBJECT_TYPE {
+enum OBJECT_TYPE
+{
 	NOTHING,
 	STREET_VERTICAL,
 	STREET_HORIZONTAL,
@@ -27,13 +28,15 @@ enum OBJECT_TYPE {
 };
 
 // set the lightning in the environment
-enum ENVIRONMENT_TIME {
+enum ENVIRONMENT_TIME
+{
 	NONE,
 	DAY,
 	NIGHT,
 };
 
-enum GROUND_TYPE {
+enum GROUND_TYPE
+{
 	SOLID,
 	ROCKS,
 	GRASS,
