@@ -34,7 +34,7 @@ Building with interior
 Live Demo
 </h4>
 <p align="center">
-<img width="800" srch="https://s2.gifyu.com/images/Untitled-Project.md.gif" alt="DEMO">  
+<img width="800" src="https://s2.gifyu.com/images/Untitled-Project.gif" alt="DEMO">  
 </p>
 
 
