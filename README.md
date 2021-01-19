@@ -27,14 +27,14 @@ Day Mode
 Building with interior
 </h4>
 <p align="center">
-<img width="700" srchttps://i.ibb.co/VwgsDfQ/photo3.png" alt="Building">  
+<img width="700" src="https://i.ibb.co/VwgsDfQ/photo3.png" alt="Building">  
 </p>
 
 <h4 align="center">
 Live Demo
 </h4>
 <p align="center">
-<img width="800" srchttps://i.ibb.co/VwgsDfQ/photo3.png" alt="Building">  
+<img width="800" srch="https://s2.gifyu.com/images/Untitled-Project.md.gif" alt="DEMO">  
 </p>
 
 
