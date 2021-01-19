@@ -37,7 +37,7 @@ Live Demo
 <img width="800" src="https://s2.gifyu.com/images/Untitled-Project.gif" alt="DEMO">  
 </p>
 ### Libraries and used tools
-```markdown
+```
 - glm library for matrices multiplication and math stuff  
 - irrklang for add background sound  
 - glew + glfw standard Modern OpenGl libraries  
