@@ -15,8 +15,15 @@ You can choose the location of buildings easly using mouse with alot of building
 Night Mode
 </h4>
 <p align="center">
-<img width="700" src="https://i.ibb.co/37y98p8/GUI.png" alt="PhotoForGUI">  
+<img width="700" src="https://i.ibb.co/g3jPr8H/photo2.png" alt="Night">  
 </p>
+<h4 align="center">
+Light Mode
+</h4>
+<p align="center">
+<img width="700" src="https://i.ibb.co/w0xDjXX/photo1.png" alt="Light">  
+</p>
+
 
 
 
