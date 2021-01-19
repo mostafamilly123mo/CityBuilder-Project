@@ -125,6 +125,7 @@ namespace GUI
 
 		#pragma region Windows Form Designer generated code
 
+		private:
 		void InitializeComponent(void)
 		{
 			this->colorMap = (gcnew System::Windows::Forms::PictureBox());
