@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Headers\Helping Clsses">
+      <UniqueIdentifier>{672f04a0-7984-46dd-928a-274f10516d66}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UsefulStuff.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInputForm.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GLFWProgram.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Helping Clsses\Camera.h">
+      <Filter>Headers\Helping Clsses</Filter>
+    </ClInclude>
+    <ClInclude Include="Helping Clsses\Mesh.h">
+      <Filter>Headers\Helping Clsses</Filter>
+    </ClInclude>
+    <ClInclude Include="Helping Clsses\Model.h">
+      <Filter>Headers\Helping Clsses</Filter>
+    </ClInclude>
+    <ClInclude Include="Helping Clsses\Shader.h">
+      <Filter>Headers\Helping Clsses</Filter>
+    </ClInclude>
+    <ClInclude Include="Helping Clsses\Texture.h">
+      <Filter>Headers\Helping Clsses</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainRunner.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\model_loading_fragment.shader">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Shaders\model_loading_vertex.shader">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Shaders\skybox_fragment.shader">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Shaders\skybox_vertex.shader">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Shaders\blend_fragment.shader">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Shaders\blend_vertex.shader">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>
