@@ -37,11 +37,13 @@ Live Demo
 <img width="800" src="https://s2.gifyu.com/images/Untitled-Project.gif" alt="DEMO">  
 </p>
 ### Libraries and used tools
+<p>
 - glm library for matrices multiplication and math stuff  
 - irrklang for add background sound  
 - glew + glfw standard Modern OpenGl libraries  
 - assimp for loading 3d models  
 - it's a windows clr project uses the .NET core to work  
+  </p>
 ### Contributors
 - [MahmoudKanbar](https://github.com/MahmoudKanbar/)  
 - [MostafaMilly](https://github.com/MostafaKMilly)
