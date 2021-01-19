@@ -24,9 +24,9 @@
     <ProjectGuid>{e10ffaf5-c05b-4085-b223-5c3f6ef2efed}</ProjectGuid>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
-    <RootNamespace>City_Creator</RootNamespace>
+    <RootNamespace>City-Builder</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>City_Creator</ProjectName>
+    <ProjectName>City-Builder</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
