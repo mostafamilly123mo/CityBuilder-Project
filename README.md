@@ -11,5 +11,14 @@ You can choose the location of buildings easly using mouse with alot of building
 
 ### Output sample from our application
 
+<h4 align="center">
+Night Mode
+</h4>
+<p align="center">
+<img src="https://i.ibb.co/37y98p8/GUI.png" alt="PhotoForGUI">  
+</p>
+
+
+
 
 
