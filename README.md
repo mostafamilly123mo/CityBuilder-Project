@@ -44,5 +44,7 @@ Live Demo
 - it's a windows clr project uses the .NET core to work  
 </p>
 ### Contributors
+<p>
 - [MahmoudKanbar](https://github.com/MahmoudKanbar/)  </br>
 - [MostafaMilly](https://github.com/MostafaKMilly) </br>
+</p>
