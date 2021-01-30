@@ -7,7 +7,6 @@ GLvoid render(std::vector<std::pair<std::pair<int, int>, OBJECT_TYPE>>& objects,
 GLuint loadCubemap(vector<std::string> faces);
 GLvoid loadModels();
 GLvoid processInput(GLFWwindow* window);
-GLvoid processInput(GLFWwindow* window);
 GLvoid framebufferSizeCallback(GLFWwindow* window, int width, int height);
 GLvoid GLFWDestroyer();
 GLvoid deltaTimeUpdater();
@@ -268,12 +267,9 @@ GLvoid render(std::vector<std::pair<std::pair<int, int>, OBJECT_TYPE>>& objects,
 		modelShader.setFloat("spotLight.linear", 0.09f);
 		modelShader.setFloat("spotLight.quadratic", 0.032f);
 		modelShader.setFloat("spotLight.cutOff", glm::cos(glm::radians(12.5f)));
-		modelShader.setFloat("spotLight.outerCutOff",
-							 glm::cos(glm::radians(15.0f)));
+		modelShader.setFloat("spotLight.outerCutOff", glm::cos(glm::radians(15.0f)));
 
-		glm::mat4 projection =
-			glm::perspective(glm::radians(camera.Zoom),
-							 (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 10000.0f);
+		glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 10000.0f);
 		glm::mat4 view = camera.GetViewMatrix();
 		modelShader.setMat4("projection", projection);
 		modelShader.setMat4("view", view);
@@ -369,8 +365,7 @@ GLvoid render(std::vector<std::pair<std::pair<int, int>, OBJECT_TYPE>>& objects,
 							if (i % 2 == 0)
 							{
 								model = glm::mat4(1.0f);
-								model = glm::translate(model,
-													   glm::vec3(x, ditanceBetweenFloors, y));
+								model = glm::translate(model, glm::vec3(x, ditanceBetweenFloors, y));
 								model = glm::scale(model, glm::vec3(5, 5, 5));
 								modelShader.setMat4("model", model);
 								building4ModelsFloor2.Draw(modelShader.ID);
@@ -378,8 +373,7 @@ GLvoid render(std::vector<std::pair<std::pair<int, int>, OBJECT_TYPE>>& objects,
 							else
 							{
 								model = glm::mat4(1.0f);
-								model = glm::translate(model,
-													   glm::vec3(x, ditanceBetweenFloors, y));
+								model = glm::translate(model, glm::vec3(x, ditanceBetweenFloors, y));
 								model = glm::scale(model, glm::vec3(5, 5, 5));
 								modelShader.setMat4("model", model);
 								building4ModelsFloor1.Draw(modelShader.ID);
